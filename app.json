@@ -1,0 +1,29 @@
+{
+  "name": "YakuzV5",
+  "description": "ᴊᴀᴠᴀsᴄʀɪᴘᴛ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ YakuzV5",
+  "logo": "https://i.ibb.co/SR76mBh/Pu3-ZYHBS5139.jpg",
+  "keywords": ["bot"],
+  "success_url": "/",
+
+    "stack": "container",
+  "env": {
+    "SESSION_ID": {
+      "description": "Put the session-id here.",
+      "required": true,
+      "value": ""
+    },  
+    
+    "MONGODB": {
+      "description": "Your MongoDB connection string (create your own free cluster at mongodb.com/atlas).",
+      "required": true,
+      "value": ""
+    }
+},
+
+     "buildpacks": [
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+        }
+     ],
+  "stack": "heroku-24"
+}
